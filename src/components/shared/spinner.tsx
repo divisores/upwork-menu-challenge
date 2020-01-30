@@ -1,11 +1,11 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
-import { Colors } from "../../lib/style-guide";
-import { classNames } from "../../lib/classnames";
-import { randomClassName } from "../../lib/rcn";
+import { Colors } from '../../lib/style-guide'
+import { classNames } from '../../lib/classnames'
+import { randomClassName } from '../../lib/rcn'
 
-const rcn = randomClassName();
+const rcn = randomClassName()
 
 const Spinner: FC = ({ className }) => (
   <svg
@@ -26,34 +26,34 @@ const Spinner: FC = ({ className }) => (
           />
         </defs>
         <clipPath id="SVGID_2_">
-          <use href="#SVGID_1_" style={{ overflow: "visible" }} />
+          <use href="#SVGID_1_" style={{ overflow: 'visible' }} />
         </clipPath>
       </g>
-      <g className={classNames(rcn("st0"), rcn("stripes"))}>
+      <g className={classNames(rcn('st0'), rcn('stripes'))}>
         <polyline
-          className={rcn("st1")}
+          className={rcn('st1')}
           opacity=".33"
-          points="40.3,206.7 5.3,206.7 18,198.7 42.3,151.7 42.3,148 50,169.3 102,261.3 104.3,256.7 146,256.7 
-	    148,262.7 134.7,247.7 61.7,119.7 84.3,81.3 82,77.3 89.3,95 159,218.3 160.7,222.7 204.7,222 207.3,222 207.7,226 198.3,215.7 
+          points="40.3,206.7 5.3,206.7 18,198.7 42.3,151.7 42.3,148 50,169.3 102,261.3 104.3,256.7 146,256.7
+	    148,262.7 134.7,247.7 61.7,119.7 84.3,81.3 82,77.3 89.3,95 159,218.3 160.7,222.7 204.7,222 207.3,222 207.7,226 198.3,215.7
 	    102.7,51.7 101.3,49.3 103.7,49.7 125.3,7.7 125.3,21 161,82 230.7,202 "
         />
         <polyline
-          className={rcn("st1")}
+          className={rcn('st1')}
           opacity=".66"
-          points="40.3,206.7 5.3,206.7 18,198.7 42.3,151.7 42.3,148 50,169.3 102,261.3 104.3,256.7 146,256.7 
-	    148,262.7 134.7,247.7 61.7,119.7 84.3,81.3 82,77.3 89.3,95 159,218.3 160.7,222.7 204.7,222 207.3,222 207.7,226 198.3,215.7 
+          points="40.3,206.7 5.3,206.7 18,198.7 42.3,151.7 42.3,148 50,169.3 102,261.3 104.3,256.7 146,256.7
+	    148,262.7 134.7,247.7 61.7,119.7 84.3,81.3 82,77.3 89.3,95 159,218.3 160.7,222.7 204.7,222 207.3,222 207.7,226 198.3,215.7
 	    102.7,51.7 101.3,49.3 103.7,49.7 125.3,7.7 125.3,21 161,82 230.7,202 "
         />
         <polyline
-          className={rcn("st1")}
-          points="40.3,206.7 5.3,206.7 18,198.7 42.3,151.7 42.3,148 50,169.3 102,261.3 104.3,256.7 146,256.7 
-	    148,262.7 134.7,247.7 61.7,119.7 84.3,81.3 82,77.3 89.3,95 159,218.3 160.7,222.7 204.7,222 207.3,222 207.7,226 198.3,215.7 
+          className={rcn('st1')}
+          points="40.3,206.7 5.3,206.7 18,198.7 42.3,151.7 42.3,148 50,169.3 102,261.3 104.3,256.7 146,256.7
+	    148,262.7 134.7,247.7 61.7,119.7 84.3,81.3 82,77.3 89.3,95 159,218.3 160.7,222.7 204.7,222 207.3,222 207.7,226 198.3,215.7
 	    102.7,51.7 101.3,49.3 103.7,49.7 125.3,7.7 125.3,21 161,82 230.7,202 "
         />
       </g>
     </g>
   </svg>
-);
+)
 
 const StyledSpinner = styled(Spinner)`
   width: 40px;
@@ -61,11 +61,11 @@ const StyledSpinner = styled(Spinner)`
   align-self: center;
   margin: 0 auto;
 
-  .${rcn("st0")} {
+  .${rcn('st0')} {
     clip-path: url(#SVGID_2_);
   }
 
-  .${rcn("st1")} {
+  .${rcn('st1')} {
     fill: none;
     stroke: ${Colors.AccordBlue};
     stroke-width: 19;
@@ -85,23 +85,23 @@ const StyledSpinner = styled(Spinner)`
     }
   }
 
-  .${rcn("stripes")} polyline:nth-of-type(1) {
+  .${rcn('stripes')} polyline:nth-of-type(1) {
     stroke-dasharray: 1200;
     stroke-dashoffset: 1200;
     animation: offset 500ms linear infinite;
   }
 
-  .${rcn("stripes")} polyline:nth-of-type(2) {
+  .${rcn('stripes')} polyline:nth-of-type(2) {
     stroke-dasharray: 1200;
     stroke-dashoffset: 1200;
     animation: offset 2.5s 0.1s linear infinite;
   }
 
-  .${rcn("stripes")} polyline:nth-of-type(3) {
+  .${rcn('stripes')} polyline:nth-of-type(3) {
     stroke-dasharray: 1200;
     stroke-dashoffset: 1200;
     animation: offset 2.5s 0.2s linear infinite;
   }
-`;
+`
 
-export { StyledSpinner as Spinner };
+export { StyledSpinner as Spinner }

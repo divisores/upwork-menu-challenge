@@ -1,5 +1,5 @@
-import { createGlobalStyle } from "styled-components";
-import { FontWeights, Colors } from "./lib/style-guide";
+import { createGlobalStyle } from 'styled-components'
+import { FontWeights, Colors } from './lib/style-guide'
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -27,4 +27,4 @@ export const GlobalStyle = createGlobalStyle`
     min-height: 100vh;
     background: ${Colors.BG3};
   }
-`;
+`
