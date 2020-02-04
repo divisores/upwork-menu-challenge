@@ -79,7 +79,7 @@ const MenuItem = ({ item, onClick }: Props) => {
         </Avatar>
       )}
       <span className="title">{title}</span>
-      {subtitle && <span className="subtitle">Manager</span>}
+      {subtitle && <span className="subtitle">{subtitle}</span>}
     </Container>
   )
 }

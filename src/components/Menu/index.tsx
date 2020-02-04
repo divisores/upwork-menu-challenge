@@ -16,7 +16,7 @@ const Container = styled.div`
 
 const Header = styled.div`
   background-color: blue;
-  height: 54px;
+  height: 49px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #deecfc;
